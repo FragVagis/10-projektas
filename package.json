@@ -1,0 +1,24 @@
+{
+  "name": "10-projektas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dead-server --port=3007 --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FragVagis/10-projektas.git"
+  },
+  "keywords": [],
+  "author": "jaketrent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FragVagis/10-projektas/issues"
+  },
+  "homepage": "https://github.com/FragVagis/10-projektas#readme",
+  "devDependencies": {
+    "dead-server": "^1.0.6"
+  }
+}

@@ -3,9 +3,18 @@ header {
     width: 100px;
     height: 906px;
     left: 0px;
-    top: calc(50% - 906px/2);
     background-color: #F7F6FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-in;
+    transition: 0.3s ease-out;
+}
+header:hover {
+    width: 206px;
+    height: 906px;
+    visibility:visible;
+}
+header:hover hr {
+    width: 128.22px;
 }
 
 .logo {
@@ -22,18 +31,47 @@ hr {
     margin: auto;
     border: 1.5px solid #C4C4C4;;
     background-color: #C4C4C4;
+    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-out;
+}
+
+.navigation {
+    margin-top: 32px;
 }
 
 .menu-svg-icon {
-    display: block;
-    margin: 34px auto;
-}
-.icon-bg.home-icon {
+    display: inline-block;
+    height: 25px;
     width: auto;
-    height: 50px;
+    margin: 15px auto;
+}
+
+
+
+
+.icon-bg {
+    padding: 1px 32px;
+    position: relative;
+    margin-left: 8px;
+    border-radius: 100px 0px 0px 100px;
+}
+.icon-bg:hover {
+    margin: auto;
     background: #FFFFFF;
     border-radius: 25px 0px 0px 25px;
 }
-.menu-svg-icon.home-button {
- padding-top: 10px;
+.icon-bg > .menu-link {
+    display: inline-block;
+    visibility: hidden;
+    transition-delay: 0.1s;
+    duration: 0.2em;
 }
+header:hover .menu-link {
+    position: absolute;
+    visibility: visible;
+    text-decoration: none;
+    margin: 15px auto;
+    width: auto;
+    font-family: sans-serif;;
+}
+   
